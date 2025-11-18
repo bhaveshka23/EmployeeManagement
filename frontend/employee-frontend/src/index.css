@@ -1,0 +1,83 @@
+:root{
+  --bg: #f5f7fb;
+  --card: #ffffff;
+  --muted: #6b7280;
+  --accent: #2f6bed;
+  --danger: #d9534f;
+  --text: #1f2937;
+  font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  min-height:100vh;
+}
+
+.container{
+  max-width:980px;
+  margin:0 auto;
+  padding:20px;
+}
+
+.navbar{
+  background:var(--card);
+  border-bottom:1px solid #e6e9ef;
+}
+.navbar-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+}
+.brand{
+  font-size:1.1rem;
+  margin:0;
+}
+.nav-links{display:flex;gap:10px}
+.nav-link{color:var(--accent);text-decoration:none}
+
+.page{padding:18px 0}
+.page-header{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:12px;
+  margin-bottom:14px;
+}
+.muted{color:var(--muted)}
+.error{color:var(--danger)}
+
+.card{
+  background:var(--card);
+  border:1px solid #e6e9ef;
+  padding:16px;
+  border-radius:8px;
+}
+
+.form{max-width:640px}
+.form-row{display:flex;flex-direction:column;margin-bottom:12px}
+.form-label{font-size:0.95rem;margin-bottom:6px}
+.form-input{padding:10px;border:1px solid #d1d5db;border-radius:6px;font-size:1rem}
+.form-actions{display:flex;gap:8px;justify-content:flex-end}
+
+.btn{padding:8px 12px;border-radius:6px;border:1px solid transparent;background:transparent;cursor:pointer}
+.btn-small{padding:6px 8px;font-size:0.9rem}
+.btn-primary{background:var(--accent);color:white;border-color:transparent}
+.btn-secondary{background:#f3f4f6;border-color:#e5e7eb}
+.btn-danger{background:var(--danger);color:white}
+
+.employees-table{width:100%;border-collapse:collapse}
+.employees-table th,.employees-table td{padding:10px 12px;border-bottom:1px solid #eef2f6;text-align:left}
+.employees-table thead{background:#fbfdff}
+.employees-table tr:hover td{background:#fbfbfb}
+.actions{display:flex;gap:8px}
+
+@media (max-width:640px){
+  .page-header{flex-direction:column;align-items:flex-start}
+  .form-actions{justify-content:flex-start}
+}
