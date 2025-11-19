@@ -1,6 +1,6 @@
-Employee Management System
+***Employee Management System***
 
-A Full-Stack Employee Management System built with Node.js (Express) + MySQL for the backend and React for the frontend.
+A ****Full-Stack Employee Management System*** built with Node.js (Express) + MySQL for the backend and React for the frontend.
 This project demonstrates CRUD operations, API development, database integration, and React UI integration.
 
 🚀 Features
@@ -19,7 +19,9 @@ Search & filter employees
 
 Form validation
 
-📁 Repository Structure
+📁 ***Repository Structure***
+
+
 employee-management-system/
 │
 ├── backend/           # Node.js + Express backend
@@ -28,7 +30,7 @@ employee-management-system/
 ├── README.md
 └── Live URL           # Frontend live deployment link
 
-⚙️ Backend Setup
+⚙️ ***Backend Setup***
 
 Navigate to the backend folder:
 
@@ -61,7 +63,7 @@ Backend API Base URL:
 
 ```https://employeemanagementbackend-10ul.onrender.com/api/employees```
 
-⚙️ Frontend Setup
+⚙️ ***Frontend Setup***
 
 Navigate to the frontend folder:
 
@@ -80,7 +82,7 @@ Start the frontend:
 
 Make sure the .env or configuration in frontend points to the backend API URL.
 
-📂 Database Structure
+📂 ***Database Structure***
 
 employees.sql contains:
 
@@ -96,7 +98,7 @@ CREATE TABLE employees (
     salary DECIMAL(10,2)
 );
 
-🎥 Live URL
+🎥 ***Live URL***
 
 Frontend Live URL:
 ```https://employee-management-flame-iota.vercel.app/```
@@ -104,7 +106,7 @@ Frontend Live URL:
 Backend Live URL (API):
 ```https://employeemanagementbackend-10ul.onrender.com/api/employees```
 
-💻 Technologies Used
+💻 ***Technologies Used***
 
 Backend: Node.js, Express.js, MySQL, dotenv
 
