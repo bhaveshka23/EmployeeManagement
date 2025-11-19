@@ -1,11 +1,8 @@
-# Ignore backend stuff
 backend/node_modules/
 backend/.env
 
-# Ignore frontend stuff
 frontend/employee-frontend/node_modules/
 frontend/employee-frontend/.env
 
-# Common ignores
 *.log
 dist/

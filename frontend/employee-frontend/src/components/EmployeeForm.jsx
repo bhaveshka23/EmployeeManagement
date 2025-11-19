@@ -3,7 +3,6 @@ import React from 'react';
 export default function EmployeeForm({ initial, onSubmit, submitText='Save' }) {
   const initialForm = initial ?? { name: '', email: '', department: '', salary: '' };
   const [form, setForm] = React.useState(initialForm);
-  // only update when a real initial is provided (e.g. editing an employee)
   React.useEffect(() => {
     if (initial) setForm(initial);
   }, [initial]);
@@ -15,7 +14,7 @@ export default function EmployeeForm({ initial, onSubmit, submitText='Save' }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    // basic validation
+    
     if (!form.name || !form.email) {
       alert('Name and email required');
       return;

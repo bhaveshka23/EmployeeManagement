@@ -12,7 +12,7 @@ export default function EmployeeList(){
 
   const navigate = useNavigate();
 
-  // fetch once on mount
+
   const fetchEmployees = async () => {
     try {
       setLoading(true);
@@ -27,7 +27,7 @@ export default function EmployeeList(){
 
   useEffect(()=> { fetchEmployees(); }, []);
 
-  // debounce search input to avoid filtering on every keystroke
+  
   useEffect(() => {
     const t = setTimeout(() => setDebouncedSearch(search.trim().toLowerCase()), 250);
     return () => clearTimeout(t);

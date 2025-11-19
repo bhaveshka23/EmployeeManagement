@@ -1,6 +1,6 @@
 const Employee = require('../models/employee');
 
-// Create
+
 const create = async (req, res) => {
   try {
     const { name, email, department, salary } = req.body;
@@ -14,7 +14,7 @@ const create = async (req, res) => {
   }
 };
 
-// Get all
+
 const getAll = async (req, res) => {
   try {
     const search = req.query.search || "";
@@ -27,7 +27,7 @@ const getAll = async (req, res) => {
 };
 
 
-// Get by id
+
 const getOne = async (req, res) => {
   try {
     const { id } = req.params;
@@ -40,7 +40,7 @@ const getOne = async (req, res) => {
   }
 };
 
-// Update
+
 const update = async (req, res) => {
   try {
     const { id } = req.params;
@@ -56,7 +56,7 @@ const update = async (req, res) => {
   }
 };
 
-// Delete
+
 const remove = async (req, res) => {
   try {
     const { id } = req.params;
