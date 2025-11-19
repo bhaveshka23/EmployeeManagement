@@ -13,9 +13,8 @@ This project demonstrates **CRUD operations**, API development, database integra
 - React frontend consuming backend APIs
 - Optional enhancements:
   - Search & filter employees
-  - Pagination
   - Form validation
-  - Loading & error states
+  
 
 ---
 
@@ -52,15 +51,15 @@ PORT=5000
 
 ```npm run dev```
 
-5. Backend API base URL: ```http://localhost:5000/api/employees```
+5. Backend API base URL: ```https://employeemanagementbackend-10ul.onrender.com/api/employees```
 
 ## ⚙️ Frontend Setup
 
 1. Navigate to frontend folder:
    
-```cd frontend```
+```cd frontend/employee-frontend```
 
-3. Install dependencies:
+2. Install dependencies:
    
 ```npm install```
 
