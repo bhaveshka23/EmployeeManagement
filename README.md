@@ -32,12 +32,14 @@ This project demonstrates **CRUD operations**, API development, database integra
 ## ⚙️ Backend Setup
 
 1. Navigate to backend folder:
+   
 ```cd backend```
 
-2.Install dependencies:
+3. Install dependencies:
+   
 ```npm install```
 
-3.Create a .env file with your database credentials:
+4. Create a .env file with your database credentials:
 
 DB_HOST=localhost
 DB_USER=root
@@ -46,21 +48,24 @@ DB_NAME=employee_db
 DB_PORT=3306
 PORT=5000
 
-4.Start the backend server:
+4. Start the backend server:
 
 ```npm run dev```
 
-5.Backend API base URL: ```http://localhost:5000/api/employees```
+5. Backend API base URL: ```http://localhost:5000/api/employees```
 
 ## ⚙️ Frontend Setup
 
-1.Navigate to frontend folder:
+1. Navigate to frontend folder:
+   
 ```cd frontend```
 
-2.Install dependencies:
+3. Install dependencies:
+   
 ```npm install```
 
-3.Start the frontend:
+5. Start the frontend:
+   
 ```npm start```
 
 🎥Live URL
