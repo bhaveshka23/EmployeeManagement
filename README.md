@@ -53,7 +53,7 @@ PORT=5000
 
 ```npm run dev```
 
-Backend API base URL: ```https://employeemanagementbackend-10ul.onrender.com/api/employees'```
+Backend API base URL: ```https://employeemanagementbackend-10ul.onrender.com/api/employees```
 
 
 ## ⚙️ Frontend Setup
