@@ -1,48 +1,43 @@
-***Employee Management System***
+# Employee Management System
 
-A ****Full-Stack Employee Management System*** built with Node.js (Express) + MySQL for the backend and React for the frontend.
-This project demonstrates CRUD operations, API development, database integration, and React UI integration.
+A **Full-Stack Employee Management System** built with **Node.js (Express) + MySQL** for backend and **React** for frontend.  
+This project demonstrates **CRUD operations**, API development, database integration, and React UI integration.
 
-🚀 Features
+---
 
-Add, edit, delete, and view employees
+## 🚀 Features
 
-Employee fields: Name, Email, Department, Salary
+- Add, edit, delete, and view employees
+- Employee fields: **Name, Email, Department, Salary**
+- RESTful APIs with proper error handling
+- React frontend consuming backend APIs
+- Optional enhancements:
+  - Search & filter employees
+  - Pagination
+  - Form validation
+  - Loading & error states
 
-RESTful APIs with proper error handling
+---
 
-React frontend consuming backend APIs
+## 📁 Repository Structure
 
-Optional enhancements:
-
-Search & filter employees
-
-Form validation
-
-📁 ***Repository Structure***
-
-
-employee-management-system/
+/employee-management-system
 │
-├── backend/           # Node.js + Express backend
-├── frontend/          # React frontend
-├── employees.sql      # SQL script for database & table creation
-├── README.md
-└── Live URL           # Frontend live deployment link
+├── backend/ # Node.js + Express backend
+├── frontend/ # React frontend
+├── schema.sql # SQL file to create MySQL table
+├── README.md # Project documentation
+└──Live url # live url
 
-⚙️ ***Backend Setup***
+## ⚙️ Backend Setup
 
-Navigate to the backend folder:
-
+1. Navigate to backend folder:
 ```cd backend```
 
-
-Install dependencies:
-
+2.Install dependencies:
 ```npm install```
 
-
-Create a .env file in the backend folder with your database credentials:
+3.Create a .env file with your database credentials:
 
 DB_HOST=localhost
 DB_USER=root
@@ -51,65 +46,24 @@ DB_NAME=employee_db
 DB_PORT=3306
 PORT=5000
 
-
-If you are using a hosted MySQL database (like Railway), replace DB_HOST, DB_USER, DB_PASSWORD, and DB_PORT accordingly.
-
-Start the backend server:
+4.Start the backend server:
 
 ```npm run dev```
 
+5.Backend API base URL: ```http://localhost:5000/api/employees```
 
-Backend API Base URL:
+## ⚙️ Frontend Setup
 
-```https://employeemanagementbackend-10ul.onrender.com/api/employees```
-
-⚙️ ***Frontend Setup***
-
-Navigate to the frontend folder:
-
+1.Navigate to frontend folder:
 ```cd frontend```
 
-
-Install dependencies:
-
+2.Install dependencies:
 ```npm install```
 
-
-Start the frontend:
-
+3.Start the frontend:
 ```npm start```
 
+🎥Live URL
 
-Make sure the .env or configuration in frontend points to the backend API URL.
+Live URL: ```https://employee-management-flame-iota.vercel.app/```
 
-📂 ***Database Structure***
-
-employees.sql contains:
-
-CREATE DATABASE IF NOT EXISTS employee_db;
-
-USE employee_db;
-
-CREATE TABLE employees (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) NOT NULL,
-    department VARCHAR(50),
-    salary DECIMAL(10,2)
-);
-
-🎥 ***Live URL***
-
-Frontend Live URL:
-```https://employee-management-flame-iota.vercel.app/```
-
-Backend Live URL (API):
-```https://employeemanagementbackend-10ul.onrender.com/api/employees```
-
-💻 ***Technologies Used***
-
-Backend: Node.js, Express.js, MySQL, dotenv
-
-Frontend: React.js, Axios, Bootstrap/Material-UI (optional)
-
-Deployment: Vercel (Frontend), Render (Backend)
